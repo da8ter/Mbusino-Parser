@@ -134,7 +134,7 @@ public function RequestAction($Ident, $Value)
             }
 
            // Wert nur setzen, wenn er sich geändert hat
-if (GetValue($varID) !== $value) {
+if ((string)GetValue($varID) !== (string)$value) {
     SetValue($varID, $value);
 }
         }
