@@ -35,7 +35,7 @@ class MBusinoParser extends IPSModule
         }
     }
 
-    public function RequestAction($ident, $value)
+public function RequestAction($ident, $value)
 {
     if ($ident === "ParseNow") {
         $this->ParseNow();
