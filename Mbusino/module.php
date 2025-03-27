@@ -133,7 +133,10 @@ public function RequestAction($Ident, $Value)
                 }
             }
 
-            SetValue($varID, $value);
+           // Wert nur setzen, wenn er sich geändert hat
+if (GetValue($varID) !== $value) {
+    SetValue($varID, $value);
+}
         }
 
         IPS_LogMessage("MBusino", "Werte erfolgreich gespeichert.");
