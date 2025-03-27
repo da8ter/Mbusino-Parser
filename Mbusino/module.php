@@ -111,7 +111,18 @@ public function RequestAction($Ident, $Value)
             $varID = @IPS_GetObjectIDByIdent($varIdent, $this->InstanceID);
 
             if ($varID === false) {
-                $type = is_int($value) ? 1 : 2;
+                switch ($name) {
+    case "time_point":
+    case "on_time":
+    case "model_version":
+    case "fab_number":
+    case "error_flags":
+        $type = 1; // Integer
+        break;
+    default:
+        $type = 2; // Float
+        break;
+}
                 $varID = IPS_CreateVariable($type);
                 IPS_SetParent($varID, $this->InstanceID);
                 IPS_SetName($varID, $varName);
