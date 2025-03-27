@@ -10,7 +10,7 @@
         {
             "type": "Button",
             "caption": "Jetzt ausf\u00fchren",
-            "onClick": "MBUS_ParseNow($_IPS['TARGET']);"
+            "onClick": "IPS_RequestAction($_IPS['TARGET'], 'ParseNow', '');"
         }
     ]
 }
