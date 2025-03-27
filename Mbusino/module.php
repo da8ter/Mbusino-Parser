@@ -35,6 +35,13 @@ class MBusinoParser extends IPSModule
         }
     }
 
+    public function RequestAction($ident, $value)
+{
+    if ($ident === "ParseNow") {
+        $this->ParseNow();
+    }
+}
+
     private function ParseJSONData(string $payload)
     {
         $data = json_decode($payload, true);
