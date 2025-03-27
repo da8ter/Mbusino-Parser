@@ -35,10 +35,14 @@ class MBusinoParser extends IPSModule
         }
     }
 
-public function RequestAction($ident, $value)
+public function RequestAction($Ident, $Value)
 {
-    if ($ident === "ParseNow") {
-        $this->ParseNow();
+    switch ($Ident) {
+        case 'ParseNow':
+            $this->ParseNow();
+            break;
+        default:
+            throw new Exception("Invalid action");
     }
 }
 
