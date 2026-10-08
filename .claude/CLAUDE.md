@@ -6,7 +6,7 @@ Projektwissen und Abweichungen vom Hausstandard: **`.claude/docs/stand.md`** (Ei
 
 ## Aufbau
 
-- **`Mbusino/`** (Gerät, Klasse `MBusinoParser`, Präfix `MBUSINO`): `module.php` (130 Zeilen), `form.json` (Auswahl der JSON-Variable, Knopf „Jetzt ausführen“ → `RequestAction('ParseNow')`), `locale.json`.
+- **`Mbusino/`** (Gerät, Klasse `MBusinoParser`, Präfix `MBUSINO`): `module.php` (144 Zeilen), `form.json` (Auswahl der JSON-Variable, Knopf „Jetzt ausführen“ → `RequestAction('ParseNow')`), `locale.json`.
 - Öffentliche Funktion: `MBUSINO_ParseNow($id)`.
 
 ## Prüfen

@@ -4,7 +4,7 @@ Das Modul entstand im März 2025 in einem Zug über die GitHub-Weboberfläche un
 
 ## Funktionsweise (Kurzfassung)
 
-Das Modul beobachtet eine String-Variable mit dem JSON eines MBusino (Liste von Einträgen mit `name`, `value_scaled`, `units`, optional `value_string`) per `VM_UPDATE` und legt je Eintrag eine Variable unter der Instanz an. Mehrfach vorkommende Namen werden durchnummeriert, Datumswerte (`YYYYMMDD`, `YYYYMMDDhhmm`) per `strtotime` zu Zeitstempeln.
+Das Modul beobachtet eine String-Variable mit dem JSON eines MBusino (Liste von Einträgen mit `name`, `value_scaled`, `units`, optional `value_string`) per `VM_UPDATE` und legt je Eintrag eine Variable unter der Instanz an. Mehrfach vorkommende Namen werden durchnummeriert, Datumswerte (`YYYYMMDD`, `YYYYMMDDhhmm`) per `strtotime` zu Zeitstempeln. `time_point`, `on_time`, `model_version`, `fab_number` und `error_flags` werden Integer-, alle anderen Float-Variablen; geschrieben wird nur bei geändertem Wert.
 
 ## Abweichungen vom Hausstandard (Stand des Codes)
 
