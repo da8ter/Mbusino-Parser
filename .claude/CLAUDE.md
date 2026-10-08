@@ -2,7 +2,7 @@
 
 Symcon-Modul, das das JSON eines MBusino (M-Bus-Auslesung, z. B. Wärme- oder Energiezähler) aus einer String-Variable in einzelne Variablen zerlegt. Öffentliches Repo `da8ter/Mbusino-Parser`, Branch `main`.
 
-Projektwissen und Abweichungen vom Hausstandard: **`docs/stand.md`** (Einstieg `docs/README.md`). Betriebsdaten dieses Rechners: `CLAUDE.local.md` (nicht eingecheckt) — dort steht auch, dass die Arbeitskopie hinter GitHub liegt.
+Projektwissen und Abweichungen vom Hausstandard: **`.claude/docs/stand.md`** (Einstieg `.claude/docs/README.md`). Betriebsdaten dieses Rechners: `CLAUDE.local.md` (nicht eingecheckt) — dort steht auch, dass die Arbeitskopie hinter GitHub liegt.
 
 ## Aufbau
 
@@ -21,4 +21,4 @@ Kein Prüfstand. `php -l Mbusino/module.php`; Verhalten mit einer Test-Variable 
 - **Release:** `version`, `build` und `date` (Unix-Zeitstempel) in `library.json` hochsetzen.
 - **Öffentliches Repo:** keine IP-Adressen, Ports, Instanz-IDs, Zähler-Seriennummern (`fab_number`), Token, Pfade unter `/Users/` — auch nicht in Beispiel-JSON.
 - **Neuer Code** folgt den Hausregeln (Module Strict, Darstellungen statt Profile, `Translate`); ein Umbau des Bestands nur auf Zuruf (Bestandsvariablen behalten Ident und Historie).
-- **Symcon-Plattformwissen** (gemessen, für alle Module): https://github.com/da8ter/SymDo-Family-Organizer/tree/SymDo-Beta/docs/plattform, lokal `../List/docs/plattform/`.
+- **Symcon-Plattformwissen** (gemessen, für alle Module): https://github.com/da8ter/SymDo-Family-Organizer/tree/SymDo-Beta/.claude/docs/plattform, lokal `../List/.claude/docs/plattform/`.
